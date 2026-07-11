@@ -1,0 +1,4 @@
+# PartyPad — app-ads.txt
+# Authorized sellers of digital advertising inventory.
+# Spec: https://iabtechlab.com/ads-txt/app-ads-txt
+google.com, pub-6901414649977501, DIRECT, f08c47fec0942fa0
