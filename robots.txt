@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://fontesoft.com.br/sitemap.xml
