@@ -1,21 +1,34 @@
-# Site institucional — FONTESOFT
+# Site institucional — FonteSoft
 
 Site estático (HTML/CSS/JS puro, sem backend) da **FONTESOFT TECNOLOGIA LTDA**, pronto para hospedagem no GitHub Pages com o domínio próprio **fontesoft.com.br**.
+
+Design baseado na identidade visual oficial da marca (pasta `refid/`): símbolo F fluido, gradiente ciano → azul elétrico → roxo, fundo azul-noite `#0B1220` e tipografia **Urbanist**.
 
 ## Estrutura
 
 ```
 index.html          Página principal (one-page com âncoras)
+privacidade.html    Política de Privacidade do PartyPad
+termos.html         Termos de Uso do PartyPad
 404.html            Página de erro personalizada
 CNAME               Domínio próprio para o GitHub Pages (fontesoft.com.br)
 robots.txt          Diretivas para buscadores + referência ao sitemap
 sitemap.xml         Sitemap com a URL canônica
 site.webmanifest    Manifest com ícones e cores do tema
+favicon.ico         Favicon multi-tamanho servido da raiz
+refid/              Identidade visual oficial (fonte dos assets — fora do git via .gitignore)
 assets/
   css/style.css     Estilos (tema escuro, mobile-first)
-  js/main.js        Menu mobile, animações, formulário de contato
-  img/              Favicon, ícones e imagem Open Graph
+  js/main.js        Menu mobile, animações de entrada, partículas do hero
+  img/              Logo, favicon, ícones e imagem Open Graph (gerados do refid/)
 ```
+
+## Contato do site
+
+O site **não usa formulário**: todos os CTAs de contato abrem o WhatsApp
+(`wa.me/5565992249488`) com mensagem pré-preenchida, falando direto com o
+responsável pela equipe. Alternativas exibidas: e-mail e Instagram
+(`@fontesoft.tech`).
 
 ## Publicação no GitHub Pages
 
@@ -29,12 +42,11 @@ assets/
   `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`
 - **`www` (opcional)** — registro `CNAME` apontando para `<seu-usuario>.github.io`
 
-## Pendências (TODOs deixados no código)
+## Páginas legais
 
-- [ ] **Links das lojas do PartyPad** — em `index.html`, seção `#partypad`, trocar os `href="#"` dos badges pelos links reais da App Store e do Google Play.
-- [ ] **Política de Privacidade e Termos de Uso** — hoje apontam para `ovinifontes.github.io`; migrar para o domínio próprio quando as páginas estiverem publicadas nele.
-- [ ] **E-mail** — `contato@fontesoft.com.br` é placeholder até o e-mail do domínio ser configurado.
-- [ ] **Formulário** — atualmente abre o cliente de e-mail (`mailto:`). Se quiser envio direto sem backend, integre um serviço como Formspree ou FormSubmit trocando o handler em `assets/js/main.js`.
+Política de Privacidade (`/privacidade.html`) e Termos de Uso (`/termos.html`) do
+PartyPad estão hospedados no domínio próprio. As versões em inglês continuam em
+`ovinifontes.github.io` (linkadas no topo de cada página).
 
 ## Dados legais exibidos no site
 
@@ -43,4 +55,4 @@ assets/
 - País: **Brasil**
 - E-mail: **contato@fontesoft.com.br**
 
-Esses dados aparecem no rodapé de todas as páginas e na seção de contato, além dos dados estruturados (JSON-LD `Organization`) no `<head>` — úteis para os processos de verificação de organização no Google Play Console e no Apple Developer Program.
+Esses dados aparecem no rodapé, na seção "Sobre" e nos dados estruturados (JSON-LD `Organization`) do `<head>` — úteis para os processos de verificação de organização no Google Play Console e no Apple Developer Program.
