@@ -44,9 +44,12 @@ responsável pela equipe. Alternativas exibidas: e-mail e Instagram
 
 ## Páginas legais
 
-Política de Privacidade (`/privacidade.html`) e Termos de Uso (`/termos.html`) do
-PartyPad estão hospedados no domínio próprio. As versões em inglês continuam em
-`ovinifontes.github.io` (linkadas no topo de cada página).
+Política de Privacidade e Termos de Uso do PartyPad estão hospedados no domínio
+próprio, nos dois idiomas: `/privacidade.html` + `/termos.html` (pt-BR) e
+`/privacy.html` + `/terms.html` (en). Os arquivos `privacy-pt.html` e
+`terms-pt.html` são redirects para as versões novas — mantidos porque podem
+estar cadastrados nas lojas de aplicativos. `app-ads.txt` na raiz é a
+autorização do AdMob e não deve ser removido.
 
 ## Dados legais exibidos no site
 
